@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Taylor's Tub Refinishing | Bathtub Reglazing St. Thomas & London Ontario</title>
-
 <meta name="description" content="Taylor's Tub Refinishing provides professional bathtub reglazing, bathtub refinishing, peeling repair and tub restoration in St. Thomas, London, Port Stanley, Aylmer, Woodstock and Southwestern Ontario.">
 
 <style>
@@ -51,7 +49,7 @@ header {
 .nav-links a {
   color: white;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 18px;
   font-weight: bold;
   font-size: 15px;
 }
@@ -83,7 +81,14 @@ header {
 .hero p {
   font-size: 22px;
   max-width: 820px;
-  margin: 0 auto 35px;
+  margin: 0 auto 28px;
+}
+
+.quote-text {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 30px 0 12px;
+  color: white;
 }
 
 .btn {
@@ -95,12 +100,6 @@ header {
   text-decoration: none;
   font-weight: bold;
   margin: 8px;
-}
-
-.btn.outline {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
 }
 
 .btn.facebook {
@@ -143,20 +142,29 @@ h2 {
   font-size: 18px;
 }
 
-.services {
+.services,
+.why-grid,
+.review-grid,
+.faq-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 24px;
 }
 
-.service {
+.service,
+.why-card,
+.review,
+.faq,
+.area-box {
   background: white;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 6px 22px rgba(0,0,0,.1);
 }
 
-.service h3 {
+.service h3,
+.why-card h3,
+.faq h3 {
   font-size: 22px;
   margin-bottom: 10px;
 }
@@ -214,16 +222,9 @@ h2 {
   margin: auto;
 }
 
-.review-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-}
-
 .review {
   background: #1f1f1f;
-  padding: 30px;
-  border-radius: 15px;
+  color: white;
 }
 
 .stars {
@@ -232,72 +233,47 @@ h2 {
   margin-bottom: 14px;
 }
 
-.area-box {
-  background: white;
-  padding: 32px;
-  border-radius: 15px;
+.google-review-button {
   text-align: center;
-  box-shadow: 0 6px 22px rgba(0,0,0,.1);
+  margin-top: 35px;
+}
+
+.area-box {
+  text-align: center;
   font-size: 18px;
 }
 
-.quote {
+.contact {
   background: #000;
   color: white;
   max-width: none;
   text-align: center;
 }
 
-.quote-inner {
-  max-width: 850px;
+.contact-inner {
+  max-width: 900px;
   margin: auto;
 }
 
-form {
-  background: white;
-  color: #222;
-  padding: 30px;
-  border-radius: 15px;
-  margin-top: 30px;
-  text-align: left;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
-button {
-  width: 100%;
-  padding: 16px;
-  background: #000;
-  color: white;
-  border: none;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.contact {
-  background: #f5f5f5;
-  text-align: center;
+.contact p {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .social-buttons {
-  margin-top: 25px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.sticky-call {
+  display: none;
 }
 
 footer {
   background: #000;
   color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 30px 20px 85px;
   font-size: 14px;
 }
 
@@ -328,6 +304,10 @@ footer {
     font-size: 18px;
   }
 
+  .quote-text {
+    font-size: 24px;
+  }
+
   h2 {
     font-size: 31px;
   }
@@ -338,6 +318,21 @@ footer {
 
   .photo img {
     height: auto;
+  }
+
+  .sticky-call {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    z-index: 2000;
+    font-weight: bold;
+    text-decoration: none;
   }
 }
 </style>
@@ -353,8 +348,8 @@ footer {
       <a href="#services">Services</a>
       <a href="#gallery">Before & After</a>
       <a href="#reviews">Reviews</a>
-      <a href="#quote">Free Quote</a>
-      <a href="#socials">Socials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </header>
@@ -368,8 +363,9 @@ footer {
     Peeling coatings, stains, water damage and worn finishes professionally restored with a clean, glossy finish — without the cost and mess of replacement.
   </p>
 
-  <a href="tel:5198541809" class="btn">Call 519-854-1809</a>
-  <a href="#quote" class="btn outline">Request A Free Quote</a>
+  <div class="quote-text">Request a Free Quote</div>
+
+  <a href="tel:5198541809" class="btn">📞 Call 519-854-1809</a>
 </section>
 
 <section id="services">
@@ -398,6 +394,36 @@ footer {
     <div class="service">
       <h3>Rental Turnovers</h3>
       <p>Reliable refinishing for apartments, rental units, landlords and property managers.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Why Choose Taylor's Tub Refinishing?</h2>
+
+  <p class="subtitle">
+    A cost-effective way to refresh your bathroom without tearing everything apart.
+  </p>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <h3>10 Years of Industry Experience</h3>
+      <p>Professional refinishing experience with a focus on clean prep, surface repair, and finished results.</p>
+    </div>
+
+    <div class="why-card">
+      <h3>Cost-Effective Alternative</h3>
+      <p>Reglazing can refresh the look of your bathtub without the cost, mess, and downtime of replacement.</p>
+    </div>
+
+    <div class="why-card">
+      <h3>Glossy Professional Finish</h3>
+      <p>Old, worn, stained, or peeling tubs can be restored with a clean and bright refinished appearance.</p>
+    </div>
+
+    <div class="why-card">
+      <h3>Landlord & Property Friendly</h3>
+      <p>Great for rental turnovers, apartment units, property managers, contractors, and homeowners.</p>
     </div>
   </div>
 </section>
@@ -458,7 +484,7 @@ footer {
 
 <section id="reviews" class="reviews">
   <div class="reviews-inner">
-    <h2>What Customers Are Saying</h2>
+    <h2>5-Star Google Reviews</h2>
 
     <p class="subtitle">
       Proud to provide clean, professional bathtub refinishing with results customers can see.
@@ -467,18 +493,24 @@ footer {
     <div class="review-grid">
       <div class="review">
         <div class="stars">★★★★★</div>
-        <p>Excellent service. Answered all my questions. Very pleased with the outcome!</p>
+        <p>“Excellent service. Answered all my questions. Very pleased with the outcome!”</p>
       </div>
 
       <div class="review">
         <div class="stars">★★★★★</div>
-        <p>Josh does excellent work and is quick to respond and schedule. Looking forward to future work.</p>
+        <p>“Josh does excellent work and is quick to respond and schedule. Looking forward to future work.”</p>
       </div>
 
       <div class="review">
         <div class="stars">★★★★★</div>
-        <p>The bathtub looked brand new. Great communication and great results.</p>
+        <p>“The bathtub looked brand new. Great communication and great results.”</p>
       </div>
+    </div>
+
+    <div class="google-review-button">
+      <a href="https://www.google.com/search?sca_esv=70aa846ced6b4820&authuser=1&sxsrf=ANbL-n5yc_EifnE1GqL7nqKBthjtrX75GQ%3A1780424711991&q=Taylor%E2%80%99s%20Tub%20Refinishing&stick=H4sIAAAAAAAAAONgU1IxqEi0NDQ0NzFNNE41NLc0NLYyqEg1S06ytEhNMzYyMElKsjBfxCoVkliZk1_0qGFmsUJIaZJCUGpaZl5mcUZmXjoAsmmgiEUAAAA&mat=CRULtvoiEoya&ved=2ahUKEwj_wIf0lumUAxUSlCsGHaSiMwEQrMcEegQIGhAC#mpd=~11136295920024816405/customers/reviews" target="_blank" class="btn">
+        ⭐ Read All Reviews on Google
+      </a>
     </div>
   </div>
 </section>
@@ -493,31 +525,39 @@ footer {
   </div>
 </section>
 
-<section id="quote" class="quote">
-  <div class="quote-inner">
-    <h2>Request A Free Quote</h2>
+<section id="faq">
+  <h2>Frequently Asked Questions</h2>
 
-    <p>
-      Fill out the form below. For the fastest estimate, include your city and details about your bathtub.
-    </p>
+  <p class="subtitle">
+    Common questions customers ask before booking bathtub reglazing.
+  </p>
 
-    <form action="mailto:TaylorsTubRefinishing@Outlook.com" method="post" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Your Name" required>
+  <div class="faq-grid">
+    <div class="faq">
+      <h3>Is bathtub refinishing worth it?</h3>
+      <p>Yes. If the tub is structurally sound, refinishing can give it a clean, refreshed look without replacing the entire bathtub.</p>
+    </div>
 
-      <input type="tel" name="Phone" placeholder="Phone Number" required>
+    <div class="faq">
+      <h3>Do I need to replace my bathtub?</h3>
+      <p>Not always. Many stained, dull, chipped, or peeling tubs can be repaired and refinished instead of replaced.</p>
+    </div>
 
-      <input type="email" name="Email" placeholder="Email Address">
+    <div class="faq">
+      <h3>Can you fix peeling?</h3>
+      <p>Yes. Peeling areas are addressed during prep so the tub can be properly repaired and refinished.</p>
+    </div>
 
-      <input type="text" name="Location" placeholder="City / Town">
-
-      <textarea name="Message" rows="6" placeholder="Tell us about your bathtub. Is it peeling, stained, chipped, worn, damaged, or needing a full refresh?"></textarea>
-
-      <button type="submit">Send Quote Request</button>
-    </form>
+    <div class="faq">
+      <h3>How do I get the fastest estimate?</h3>
+      <p>Call or message and send clear photos of the tub, including any peeling, chips, stains, drain damage, or worn areas.</p>
+    </div>
   </div>
 </section>
 
-<section id="socials" class="contact">
+<section id="contact" class="contact"> <div class="contact-inner"> <h2>Request a Free Quote</h2> <p> Call, email, or message Taylor's Tub Refinishing today. For the fastest estimate, send a few clear photos of your bathtub. </p> <a href="tel:5198541809" class="btn"> 📞 Call 519-854-1809 </a> <br> <a href="mailto:TaylorsTubRefinishing@Outlook.com" class="btn"> ✉️ Email Us </a> <p style="margin-top:20px;font-size:18px;"> TaylorsTubRefinishing@Outlook.com </p> </div> </section>
+
+<section id="socials">
   <h2>Connect With Taylor's Tub Refinishing</h2>
 
   <p class="subtitle">
@@ -525,8 +565,6 @@ footer {
   </p>
 
   <div class="social-buttons">
-    <a href="tel:5198541809" class="btn">📞 Call 519-854-1809</a>
-
     <a href="https://www.facebook.com/TaylorsTubRefinishing" target="_blank" class="btn facebook">
       Facebook
     </a>
@@ -535,7 +573,7 @@ footer {
       Instagram
     </a>
 
-    <a href="https://www.tiktok.com/@taylorstubrefinishing" target="_blank" class="btn tiktok">
+    <a href="https://www.tiktok.com/@taylors.tub.refin" target="_blank" class="btn tiktok">
       TikTok
     </a>
 
@@ -550,6 +588,7 @@ footer {
   <p>Bathtub Reglazing • Bathtub Refinishing • Tub Restoration • St. Thomas & London Ontario</p>
 </footer>
 
+<a href="tel:5198541809" class="sticky-call">📞 Request a Free Quote: 519-854-1809</a>
+
 </body>
 </html>
-```

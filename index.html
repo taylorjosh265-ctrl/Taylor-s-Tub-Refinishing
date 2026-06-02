@@ -5,504 +5,549 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Taylor's Tub Refinishing | Bathtub Reglazing St. Thomas</title>
+<title>Taylor's Tub Refinishing | Bathtub Reglazing St. Thomas & London Ontario</title>
 
-<meta name="description" content="Professional bathtub reglazing, bathtub refinishing, peeling repair and tub restoration serving St. Thomas, London, Port Stanley, Woodstock and Southwestern Ontario.">
+<meta name="description" content="Taylor's Tub Refinishing provides professional bathtub reglazing, bathtub refinishing, peeling repair and tub restoration in St. Thomas, London, Port Stanley, Aylmer, Woodstock and Southwestern Ontario.">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-font-family:Arial, Helvetica, sans-serif;
-background:#f5f5f5;
-color:#222;
-line-height:1.6;
+html {
+  scroll-behavior: smooth;
 }
 
-header{
-background:#000;
-position:sticky;
-top:0;
-z-index:1000;
-padding:15px 25px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
 }
 
-.nav{
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
+header {
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 14px 24px;
 }
 
-.logo{
-height:70px;
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-links a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:bold;
+.logo {
+  height: 70px;
+  width: auto;
 }
 
-.hero{
-background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-url("after1.jpg");
-background-size:cover;
-background-position:center;
-padding:120px 20px;
-text-align:center;
-color:white;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 15px;
 }
 
-.hero-logo{
-width:320px;
-max-width:90%;
-margin-bottom:25px;
+.hero {
+  background:
+    linear-gradient(rgba(0,0,0,.76), rgba(0,0,0,.76)),
+    url("after1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
 }
 
-.hero h1{
-font-size:52px;
-max-width:900px;
-margin:auto;
-margin-bottom:20px;
+.hero-logo {
+  width: 330px;
+  max-width: 90%;
+  margin-bottom: 28px;
 }
 
-.hero p{
-font-size:22px;
-max-width:800px;
-margin:auto;
-margin-bottom:35px;
+.hero h1 {
+  font-size: 52px;
+  max-width: 980px;
+  margin: 0 auto 20px;
+  line-height: 1.15;
 }
 
-.btn{
-display:inline-block;
-padding:15px 30px;
-background:white;
-color:black;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-margin:10px;
+.hero p {
+  font-size: 22px;
+  max-width: 820px;
+  margin: 0 auto 35px;
 }
 
-section{
-max-width:1200px;
-margin:auto;
-padding:80px 20px;
+.btn {
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 8px;
 }
 
-h2{
-text-align:center;
-font-size:40px;
-margin-bottom:20px;
+.btn.outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
 }
 
-.subtitle{
-text-align:center;
-max-width:850px;
-margin:auto;
-margin-bottom:50px;
-font-size:18px;
+.btn.facebook {
+  background: #1877F2;
+  color: white;
 }
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+.btn.instagram {
+  background: #E1306C;
+  color: white;
 }
 
-.service{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
+.btn.tiktok {
+  background: #111;
+  color: white;
 }
 
-.gallery{
-display:grid;
-gap:40px;
+.btn.youtube {
+  background: #FF0000;
+  color: white;
 }
 
-.project{
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
 }
 
-.photos{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
+h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 18px;
+  line-height: 1.2;
 }
 
-.photo{
-position:relative;
+.subtitle {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 45px;
+  font-size: 18px;
 }
 
-.photo img{
-width:100%;
-height:450px;
-object-fit:cover;
-border-radius:12px;
-display:block;
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
 }
 
-.label{
-position:absolute;
-top:15px;
-left:15px;
-background:rgba(0,0,0,.75);
-color:white;
-padding:8px 16px;
-border-radius:25px;
-font-weight:bold;
+.service {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 22px rgba(0,0,0,.1);
 }
 
-.reviews{
-background:#111;
-max-width:none;
-color:white;
+.service h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
-.reviews-inner{
-max-width:1200px;
-margin:auto;
+.gallery {
+  display: grid;
+  gap: 42px;
 }
 
-.review-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+.project {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 6px 22px rgba(0,0,0,.1);
 }
 
-.review{
-background:#1f1f1f;
-padding:30px;
-border-radius:15px;
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
 }
 
-.stars{
-color:gold;
-font-size:24px;
-margin-bottom:15px;
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
-.area-box{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-text-align:center;
-font-size:18px;
+.photo img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  display: block;
 }
 
-.quote{
-background:#000;
-color:white;
-max-width:none;
+.label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(0,0,0,.78);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: bold;
 }
 
-.quote-inner{
-max-width:900px;
-margin:auto;
-text-align:center;
+.reviews {
+  background: #111;
+  color: white;
+  max-width: none;
 }
 
-form{
-background:white;
-padding:30px;
-border-radius:15px;
-margin-top:30px;
-color:black;
+.reviews-inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.review {
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.stars {
+  color: #facc15;
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.area-box {
+  background: white;
+  padding: 32px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 22px rgba(0,0,0,.1);
+  font-size: 18px;
+}
+
+.quote {
+  background: #000;
+  color: white;
+  max-width: none;
+  text-align: center;
+}
+
+.quote-inner {
+  max-width: 850px;
+  margin: auto;
+}
+
+form {
+  background: white;
+  color: #222;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-align: left;
 }
 
 input,
-textarea{
-width:100%;
-padding:15px;
-margin-bottom:15px;
-border:1px solid #ccc;
-border-radius:8px;
-font-size:16px;
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
-button{
-width:100%;
-padding:15px;
-background:black;
-color:white;
-border:none;
-font-size:18px;
-font-weight:bold;
-border-radius:8px;
-cursor:pointer;
+button {
+  width: 100%;
+  padding: 16px;
+  background: #000;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-footer{
-background:#000;
-color:white;
-text-align:center;
-padding:30px;
+.contact {
+  background: #f5f5f5;
+  text-align: center;
 }
 
-@media(max-width:768px){
-
-.hero h1{
-font-size:36px;
+.social-buttons {
+  margin-top: 25px;
 }
 
-.hero p{
-font-size:18px;
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
 }
 
-.photos{
-grid-template-columns:1fr;
-}
+@media(max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
 
-.photo img{
-height:auto;
-}
+  .nav-links {
+    margin-top: 12px;
+    text-align: center;
+  }
 
-.nav{
-flex-direction:column;
-}
+  .nav-links a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
 
-.nav-links{
-margin-top:15px;
-}
+  .hero {
+    padding: 80px 20px;
+  }
 
-}
+  .hero h1 {
+    font-size: 35px;
+  }
 
+  .hero p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 31px;
+  }
+
+  .photos {
+    grid-template-columns: 1fr;
+  }
+
+  .photo img {
+    height: auto;
+  }
+}
 </style>
 </head>
 
 <body>
 
 <header>
+  <div class="nav">
+    <img src="logo.png" alt="Taylor's Tub Refinishing Logo" class="logo">
 
-<div class="nav">
-
-<img src="logo.png" alt="Taylor's Tub Refinishing" class="logo">
-
-<div class="nav-links">
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
-<a href="#reviews">Reviews</a>
-<a href="#quote">Quote</a>
-</div>
-
-</div>
-
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#gallery">Before & After</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#quote">Free Quote</a>
+      <a href="#socials">Socials</a>
+    </div>
+  </div>
 </header>
 
 <section class="hero">
+  <img src="logo.png" alt="Taylor's Tub Refinishing Logo" class="hero-logo">
 
-<img src="logo.png" alt="Taylor's Tub Refinishing" class="hero-logo">
+  <h1>Bathtub Reglazing & Refinishing That Makes Old Tubs Look New Again</h1>
 
-<h1>Bathtub Reglazing & Refinishing That Makes Old Tubs Look New Again</h1>
+  <p>
+    Peeling coatings, stains, water damage and worn finishes professionally restored with a clean, glossy finish — without the cost and mess of replacement.
+  </p>
 
-<p>
-Peeling coatings, stains, water damage and worn finishes professionally restored with a beautiful glossy finish.
-</p>
-
-<a href="tel:5198541809" class="btn">
-Call 519-854-1809
-</a>
-
-<a href="#quote" class="btn">
-Free Quote
-</a>
-
+  <a href="tel:5198541809" class="btn">Call 519-854-1809</a>
+  <a href="#quote" class="btn outline">Request A Free Quote</a>
 </section>
 
 <section id="services">
+  <h2>Professional Bathtub Refinishing</h2>
 
-<h2>Professional Tub Refinishing</h2>
+  <p class="subtitle">
+    Taylor's Tub Refinishing helps homeowners, landlords, contractors and property managers restore worn bathtubs throughout Southwestern Ontario.
+  </p>
 
-<p class="subtitle">
-Serving homeowners, landlords, contractors and property managers throughout Southwestern Ontario.
-</p>
+  <div class="services">
+    <div class="service">
+      <h3>Bathtub Reglazing</h3>
+      <p>Restore your existing bathtub with a fresh, glossy, professional finish.</p>
+    </div>
 
-<div class="services">
+    <div class="service">
+      <h3>Bathtub Refinishing</h3>
+      <p>Perfect for tubs that are dull, stained, scratched, outdated or showing years of wear.</p>
+    </div>
 
-<div class="service">
-<h3>Bathtub Reglazing</h3>
-<p>Restore your bathtub without the expense of replacement.</p>
-</div>
+    <div class="service">
+      <h3>Peeling & Damage Repair</h3>
+      <p>Repair peeling coatings, chips, surface wear and problem areas before refinishing.</p>
+    </div>
 
-<div class="service">
-<h3>Bathtub Refinishing</h3>
-<p>Fresh glossy finishes that make worn tubs look new again.</p>
-</div>
-
-<div class="service">
-<h3>Peeling Repair</h3>
-<p>Repair peeling coatings, chips and damaged surfaces.</p>
-</div>
-
-<div class="service">
-<h3>Rental Turnovers</h3>
-<p>Fast service for apartments, rentals and property managers.</p>
-</div>
-
-</div>
-
+    <div class="service">
+      <h3>Rental Turnovers</h3>
+      <p>Reliable refinishing for apartments, rental units, landlords and property managers.</p>
+    </div>
+  </div>
 </section>
 
 <section id="gallery">
+  <h2>Real Before & After Transformations</h2>
 
-<h2>Real Before & After Transformations</h2>
+  <p class="subtitle">
+    Actual bathtub reglazing and refinishing projects completed by Taylor's Tub Refinishing.
+  </p>
 
-<p class="subtitle">
-Actual projects completed by Taylor's Tub Refinishing.
-</p>
+  <div class="gallery">
 
-<div class="gallery">
+    <div class="project">
+      <div class="photos">
+        <div class="photo">
+          <span class="label">Before</span>
+          <img src="before1.jpg" alt="Peeling bathtub before reglazing">
+        </div>
 
-<div class="project">
+        <div class="photo">
+          <span class="label">After</span>
+          <img src="after1.jpg" alt="Glossy bathtub after reglazing">
+        </div>
+      </div>
+    </div>
 
-<div class="photos">
+    <div class="project">
+      <div class="photos">
+        <div class="photo">
+          <span class="label">Before</span>
+          <img src="before2.jpg" alt="Worn bathtub before refinishing">
+        </div>
 
-<div class="photo">
-<span class="label">Before</span>
-<img src="before1.jpg">
-</div>
+        <div class="photo">
+          <span class="label">After</span>
+          <img src="after2.jpg" alt="Bathtub after refinishing">
+        </div>
+      </div>
+    </div>
 
-<div class="photo">
-<span class="label">After</span>
-<img src="after1.jpg">
-</div>
+    <div class="project">
+      <div class="photos">
+        <div class="photo">
+          <span class="label">Before</span>
+          <img src="before3.jpg" alt="Damaged bathtub before restoration">
+        </div>
 
-</div>
+        <div class="photo">
+          <span class="label">After</span>
+          <img src="after3.jpg" alt="Bathtub after restoration">
+        </div>
+      </div>
+    </div>
 
-</div>
-
-<div class="project">
-
-<div class="photos">
-
-<div class="photo">
-<span class="label">Before</span>
-<img src="before2.jpg">
-</div>
-
-<div class="photo">
-<span class="label">After</span>
-<img src="after2.jpg">
-</div>
-
-</div>
-
-</div>
-
-<div class="project">
-
-<div class="photos">
-
-<div class="photo">
-<span class="label">Before</span>
-<img src="before3.jpg">
-</div>
-
-<div class="photo">
-<span class="label">After</span>
-<img src="after3.jpg">
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
 <section id="reviews" class="reviews">
+  <div class="reviews-inner">
+    <h2>What Customers Are Saying</h2>
 
-<div class="reviews-inner">
+    <p class="subtitle">
+      Proud to provide clean, professional bathtub refinishing with results customers can see.
+    </p>
 
-<h2>What Customers Are Saying</h2>
+    <div class="review-grid">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>Excellent service. Answered all my questions. Very pleased with the outcome!</p>
+      </div>
 
-<div class="review-grid">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>Josh does excellent work and is quick to respond and schedule. Looking forward to future work.</p>
+      </div>
 
-<div class="review">
-<div class="stars">★★★★★</div>
-Excellent service. Answered all my questions. Very pleased with the outcome!
-</div>
-
-<div class="review">
-<div class="stars">★★★★★</div>
-Josh does excellent work and is quick to respond and schedule.
-</div>
-
-<div class="review">
-<div class="stars">★★★★★</div>
-The bathtub looked brand new. Great communication and great results.
-</div>
-
-</div>
-
-</div>
-
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>The bathtub looked brand new. Great communication and great results.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section>
+  <h2>Areas We Serve</h2>
 
-<h2>Areas We Serve</h2>
-
-<div class="area-box">
-
-St. Thomas • London • Port Stanley • Aylmer • Woodstock • Tillsonburg • Ingersoll • Dorchester • Belmont • Sarnia
-
-</div>
-
+  <div class="area-box">
+    <p>
+      Taylor's Tub Refinishing proudly serves <strong>St. Thomas, London, Port Stanley, Aylmer, Woodstock, Tillsonburg, Ingersoll, Dorchester, Belmont, Sarnia</strong> and surrounding Southwestern Ontario communities.
+    </p>
+  </div>
 </section>
 
 <section id="quote" class="quote">
+  <div class="quote-inner">
+    <h2>Request A Free Quote</h2>
 
-<div class="quote-inner">
+    <p>
+      Fill out the form below. For the fastest estimate, include your city and details about your bathtub.
+    </p>
 
-<h2>Request A Free Quote</h2>
+    <form action="mailto:TaylorsTubRefinishing@Outlook.com" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required>
 
-<p>
-Send a few photos of your bathtub and we'll provide a quote.
-</p>
+      <input type="tel" name="Phone" placeholder="Phone Number" required>
 
-<form>
+      <input type="email" name="Email" placeholder="Email Address">
 
-<input type="text" placeholder="Your Name">
+      <input type="text" name="Location" placeholder="City / Town">
 
-<input type="tel" placeholder="Phone Number">
+      <textarea name="Message" rows="6" placeholder="Tell us about your bathtub. Is it peeling, stained, chipped, worn, damaged, or needing a full refresh?"></textarea>
 
-<input type="email" placeholder="Email Address">
+      <button type="submit">Send Quote Request</button>
+    </form>
+  </div>
+</section>
 
-<textarea rows="5" placeholder="Tell us about your bathtub"></textarea>
+<section id="socials" class="contact">
+  <h2>Connect With Taylor's Tub Refinishing</h2>
 
-<button>
-Request Quote
-</button>
+  <p class="subtitle">
+    Follow along for before and after transformations, refinishing projects, and updates.
+  </p>
 
-</form>
+  <div class="social-buttons">
+    <a href="tel:5198541809" class="btn">📞 Call 519-854-1809</a>
 
-</div>
+    <a href="https://www.facebook.com/TaylorsTubRefinishing" target="_blank" class="btn facebook">
+      Facebook
+    </a>
 
+    <a href="https://www.instagram.com/taylorstubrefinishing" target="_blank" class="btn instagram">
+      Instagram
+    </a>
+
+    <a href="https://www.tiktok.com/@taylorstubrefinishing" target="_blank" class="btn tiktok">
+      TikTok
+    </a>
+
+    <a href="https://www.youtube.com/@taylorstubrefinishing" target="_blank" class="btn youtube">
+      YouTube
+    </a>
+  </div>
 </section>
 
 <footer>
-
-<p>© 2026 Taylor's Tub Refinishing Inc.</p>
-
-<p>Bathtub Reglazing • Bathtub Refinishing • Tub Restoration</p>
-
+  <p>© 2026 Taylor's Tub Refinishing Inc.</p>
+  <p>Bathtub Reglazing • Bathtub Refinishing • Tub Restoration • St. Thomas & London Ontario</p>
 </footer>
 
 </body>
